@@ -181,7 +181,7 @@ app.post('/new/author', function(req, res){
             connection.query(stmt, function(error, result){
                 if(error) throw error;
                 res.redirect('/');
-            })
+            });
       }
   });
 });
